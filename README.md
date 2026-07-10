@@ -1,32 +1,23 @@
-# Sadia Farooq Portfolio Projects
+# Mobile Phishing Awareness Research Demo
 
-This repository contains portfolio demonstration work for data analytics, business intelligence and cybersecurity awareness research.
+This repository contains a small cybersecurity research demonstration focused on mobile phishing awareness and user-facing warning design.
 
-## Data Analytics & Business Intelligence Portfolio
+## Repository Contents
 
-The `data-analytics-portfolio` folder includes practical demonstration projects aligned with Data Analyst, Reporting Analyst and Business Intelligence roles.
+- `phishing-detection-demo-plan.md` — outline for a basic phishing detection demonstration.
+- `research-proposal-summary.md` — one-page summary of the proposed research direction.
+- `study-design.md` — quantitative study design for evaluating mobile phishing awareness and warning messages.
+- `mobile_phishing_awareness_ui_concept.png` — example UI concept for phishing warning cards.
 
-### Included Projects
+## Project Focus
 
-- Retail Sales Excel Dashboard
-- Power BI Retail Performance Dashboard
-- SQL Customer & Revenue Analysis
-- Python Data Cleaning & Insights Demo
+The project explores how mobile users respond to phishing warnings and how clearer warning designs may improve risk awareness. It is intended as a compact evidence package for cybersecurity research applications.
 
-### Skills Demonstrated
+## Skills Demonstrated
 
-- Excel reporting and dashboard planning
-- Power BI dashboard design and DAX measures
-- SQL analysis and business reporting
-- Python data cleaning and KPI reporting
-- Data validation and data quality checks
-- Business intelligence documentation
-- Stakeholder-friendly reporting
-
-## Cybersecurity Awareness Research Demo
-
-This repository may also include cybersecurity-related work, including mobile phishing awareness and research support material.
-
-## Professional Focus
-
-Data Analyst | Reporting & Business Insights | SQL | Excel | Python | Power BI | Business Intelligence
+- Cybersecurity awareness research planning
+- Phishing URL detection concept design
+- User-study planning
+- Mobile warning-message design
+- Research documentation
+- Python/data-analysis readiness for future classifier work
