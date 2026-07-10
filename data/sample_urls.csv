@@ -1,0 +1,16 @@
+url,label
+https://university.edu/login,legitimate
+https://studentportal.university.edu/dashboard,legitimate
+https://scholarships.gov.au/apply,legitimate
+https://www.paypal.com/signin,legitimate
+https://accounts.google.com/,legitimate
+http://paypal-security-update-login.verify-user-info.com,phishing
+https://free-scholarship-claim-now.example.com/login,phishing
+http://secure-bank-update-account.example.net,phishing
+https://microsoft365-password-reset.example.org,phishing
+http://login.university-support-verify.example.com,phishing
+https://www.commbank.com.au/,legitimate
+https://www.rmit.edu.au/study-with-us,legitimate
+http://rmit-scholarship-urgent-login.example.com,phishing
+https://github.com/login,legitimate
+http://github-security-alert-reset.example.info,phishing
