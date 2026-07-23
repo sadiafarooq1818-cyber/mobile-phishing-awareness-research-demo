@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SonicSync Mobile Mockup</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="intro">
+      <p class="eyebrow">Retrospective Mobile Prototype</p>
+      <h1>SonicSync</h1>
+      <p class="subtitle">Turn nearby Android phones into a synchronized wireless speaker group.</p>
+      <div class="notice">This is a modern interactive mockup reconstructed from the documented FYP concept. It is not the original submitted application.</div>
+    </section>
+
+    <section class="phone" aria-label="SonicSync mobile application mockup">
+      <div class="status-bar"><span>9:41</span><span>Wi-Fi&nbsp;&nbsp;87%</span></div>
+      <header class="app-bar">
+        <div>
+          <p class="app-name">SonicSync</p>
+          <p class="room-label" id="roomLabel">No active room</p>
+        </div>
+        <button class="icon-button" id="settingsButton" aria-label="Settings">⚙</button>
+      </header>
+
+      <nav class="tabs" aria-label="Application sections">
+        <button class="tab active" data-screen="home">Home</button>
+        <button class="tab" data-screen="devices">Devices</button>
+        <button class="tab" data-screen="player">Player</button>
+      </nav>
+
+      <section class="screen active" id="home">
+        <div class="hero-card">
+          <div class="wave-icon">♫</div>
+          <h2>Play together</h2>
+          <p>Create a room on this phone or join an existing room on the same Wi-Fi network.</p>
+          <button class="primary" id="createRoom">Create a room</button>
+          <button class="secondary" id="joinRoom">Join with code</button>
+        </div>
+
+        <div class="metric-grid">
+          <article><strong id="deviceCount">1</strong><span>Connected device</span></article>
+          <article><strong id="latencyValue">--</strong><span>Estimated latency</span></article>
+        </div>
+      </section>
+
+      <section class="screen" id="devices">
+        <div class="section-heading">
+          <div><p class="eyebrow small">Local network</p><h2>Connected devices</h2></div>
+          <button class="small-button" id="scanDevices">Scan</button>
+        </div>
+        <div class="device-list" id="deviceList">
+          <article class="device-card host">
+            <div class="device-avatar">S</div>
+            <div><strong>Sadia's phone</strong><span>Host · This device</span></div>
+            <span class="status connected">Ready</span>
+          </article>
+        </div>
+        <p class="helper">All phones must be connected to the same Wi-Fi network. Device discovery is simulated in this mockup.</p>
+      </section>
+
+      <section class="screen" id="player">
+        <div class="album-art">
+          <div class="record"><span>SONIC<br />SYNC</span></div>
+        </div>
+        <div class="track-info"><p class="eyebrow small">Now playing</p><h2>Demo Track</h2><p>Local audio source</p></div>
+        <input type="range" id="progress" min="0" max="100" value="28" aria-label="Playback progress" />
+        <div class="time-row"><span>1:12</span><span>4:16</span></div>
+        <div class="player-controls">
+          <button aria-label="Previous">⏮</button>
+          <button class="play-button" id="playPause" aria-label="Play">▶</button>
+          <button aria-label="Next">⏭</button>
+        </div>
+        <div class="sync-panel">
+          <div><strong>Synchronization</strong><span id="syncStatus">Waiting for room</span></div>
+          <span class="pulse" id="syncPulse"></span>
+        </div>
+      </section>
+
+      <div class="modal hidden" id="roomModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-card">
+          <h2 id="modalTitle">Room created</h2>
+          <p id="modalText">Share this code with nearby devices.</p>
+          <div class="room-code" id="roomCode">SYNC-248</div>
+          <button class="primary" id="closeModal">Continue</button>
+        </div>
+      </div>
+
+      <div class="toast hidden" id="toast" role="status"></div>
+    </section>
+
+    <section class="flow-note">
+      <h2>Prototype flow</h2>
+      <p>Create room → scan devices → connect clients → select audio → synchronize playback.</p>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
